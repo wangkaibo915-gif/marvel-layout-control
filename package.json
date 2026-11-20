@@ -1,0 +1,11 @@
+{
+  "name": "marvel-layout-control",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "backstop:reference": "backstop reference --config=backstop.json",
+    "backstop:test": "backstop test --config=backstop.json"
+  },
+  "devDependencies": {"backstopjs": "^6.3.25"}
+}

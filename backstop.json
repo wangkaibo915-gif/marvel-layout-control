@@ -1,0 +1,43 @@
+{
+  "id": "marvel_ironman_control",
+  "viewports": [
+    {
+      "label": "assignment",
+      "width": 1440,
+      "height": 1024
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "ironman_slide",
+      "url": "http://127.0.0.1:8080/",
+      "referenceUrl": "http://127.0.0.1:8080/reference.html",
+      "selectors": [
+        "viewport"
+      ],
+      "misMatchThreshold": 0.1,
+      "delay": 500,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [
+    "browser",
+    "json"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox"
+    ],
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 5
+}
